@@ -223,6 +223,7 @@ const preview = {
     const option = Array.prototype.find.call(selectElement.options, (o) => o.value === property);
     selectElement.disabled = false;
     option.disabled = false;
+    option.selected = true;
     // update and exit
     this.update();
   },
